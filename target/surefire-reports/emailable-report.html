@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Cucumber Suite</th></tr><tr><td><a href="#t0">Cucumber test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">19,832</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Cucumber Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Cucumber test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">step_Definitions.Runner</td><td><a href="#m0">feature</a></td><td rowspan="1">1605609018392</td><td rowspan="1">15289</td></tr></tbody></table><h2>Cucumber test</h2><h3 id="m0">step_Definitions.Runner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Search for a Bus</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=86.0.4240.198)
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;SHARAN-PC&apos;, ip: &apos;192.168.43.27&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0047C013+3194899]
+	Ordinal0 [0x00366021+2056225]
+	Ordinal0 [0x001FF608+587272]
+	Ordinal0 [0x001F3735+538421]
+	Ordinal0 [0x001F2A6F+535151]
+	Ordinal0 [0x001F2E45+536133]
+	Ordinal0 [0x001F27A5+534437]
+	Ordinal0 [0x001FBBC9+572361]
+	Ordinal0 [0x001F2754+534356]
+	Ordinal0 [0x001F3475+537717]
+	Ordinal0 [0x001F2A6F+535151]
+	Ordinal0 [0x001F2E45+536133]
+	Ordinal0 [0x001F27A5+534437]
+	Ordinal0 [0x001F9EFE+564990]
+	Ordinal0 [0x001F2754+534356]
+	Ordinal0 [0x001F3475+537717]
+	Ordinal0 [0x001F2A6F+535151]
+	Ordinal0 [0x001F2E45+536133]
+	Ordinal0 [0x001F27A5+534437]
+	Ordinal0 [0x001F8186+557446]
+	Ordinal0 [0x001F2754+534356]
+	Ordinal0 [0x001F3475+537717]
+	Ordinal0 [0x001F2A6F+535151]
+	Ordinal0 [0x001F2E45+536133]
+	Ordinal0 [0x001F27A5+534437]
+	Ordinal0 [0x001F74A7+554151]
+	Ordinal0 [0x001F2754+534356]
+	Ordinal0 [0x001F3475+537717]
+	Ordinal0 [0x001F2A6F+535151]
+	Ordinal0 [0x001F2E45+536133]
+	Ordinal0 [0x001F27A5+534437]
+	Ordinal0 [0x001EF06C+520300]
+	Ordinal0 [0x001F2754+534356]
+	Ordinal0 [0x001F25BF+533951]
+	Ordinal0 [0x001F23D3+533459]
+	Ordinal0 [0x00200620+591392]
+	Ordinal0 [0x001A2A0C+207372]
+	Ordinal0 [0x001A1D0D+204045]
+	Ordinal0 [0x0019FC1B+195611]
+	Ordinal0 [0x00183B7F+80767]
+	Ordinal0 [0x00184B4E+84814]
+	Ordinal0 [0x00184AD9+84697]
+	Ordinal0 [0x0037CE64+2149988]
+	GetHandleVerifier [0x005EBE95+1400773]
+	GetHandleVerifier [0x005EBB61+1399953]
+	GetHandleVerifier [0x005F31FA+1430314]
+	GetHandleVerifier [0x005EC69F+1402831]
+	Ordinal0 [0x00373D61+2112865]
+	Ordinal0 [0x0037E5CB+2155979]
+	Ordinal0 [0x0037E6F5+2156277]
+	Ordinal0 [0x0038F26E+2224750]
+	BaseThreadInitThunk [0x75F13677+18]
+	RtlInitializeExceptionChain [0x77DC9D72+99]
+	RtlInitializeExceptionChain [0x77DC9D45+54]
+
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+Caused by: org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=86.0.4240.198)
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;SHARAN-PC&apos;, ip: &apos;192.168.43.27&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0047C013+3194899]
+	Ordinal0 [0x00366021+2056225]
+	Ordinal0 [0x001FF608+587272]
+	Ordinal0 [0x001F3735+538421]
+	Ordinal0 [0x001F2A6F+535151]
+	Ordinal0 [0x001F2E45+536133]
+	Ordinal0 [0x001F27A5+534437]
+	Ordinal0 [0x001FBBC9+572361]
+	Ordinal0 [0x001F2754+534356]
+	Ordinal0 [0x001F3475+537717]
+	Ordinal0 [0x001F2A6F+535151]
+	Ordinal0 [0x001F2E45+536133]
+	Ordinal0 [0x001F27A5+534437]
+	Ordinal0 [0x001F9EFE+564990]
+	Ordinal0 [0x001F2754+534356]
+	Ordinal0 [0x001F3475+537717]
+	Ordinal0 [0x001F2A6F+535151]
+	Ordinal0 [0x001F2E45+536133]
+	Ordinal0 [0x001F27A5+534437]
+	Ordinal0 [0x001F8186+557446]
+	Ordinal0 [0x001F2754+534356]
+	Ordinal0 [0x001F3475+537717]
+	Ordinal0 [0x001F2A6F+535151]
+	Ordinal0 [0x001F2E45+536133]
+	Ordinal0 [0x001F27A5+534437]
+	Ordinal0 [0x001F74A7+554151]
+	Ordinal0 [0x001F2754+534356]
+	Ordinal0 [0x001F3475+537717]
+	Ordinal0 [0x001F2A6F+535151]
+	Ordinal0 [0x001F2E45+536133]
+	Ordinal0 [0x001F27A5+534437]
+	Ordinal0 [0x001EF06C+520300]
+	Ordinal0 [0x001F2754+534356]
+	Ordinal0 [0x001F25BF+533951]
+	Ordinal0 [0x001F23D3+533459]
+	Ordinal0 [0x00200620+591392]
+	Ordinal0 [0x001A2A0C+207372]
+	Ordinal0 [0x001A1D0D+204045]
+	Ordinal0 [0x0019FC1B+195611]
+	Ordinal0 [0x00183B7F+80767]
+	Ordinal0 [0x00184B4E+84814]
+	Ordinal0 [0x00184AD9+84697]
+	Ordinal0 [0x0037CE64+2149988]
+	GetHandleVerifier [0x005EBE95+1400773]
+	GetHandleVerifier [0x005EBB61+1399953]
+	GetHandleVerifier [0x005F31FA+1430314]
+	GetHandleVerifier [0x005EC69F+1402831]
+	Ordinal0 [0x00373D61+2112865]
+	Ordinal0 [0x0037E5CB+2155979]
+	Ordinal0 [0x0037E6F5+2156277]
+	Ordinal0 [0x0038F26E+2224750]
+	BaseThreadInitThunk [0x75F13677+18]
+	RtlInitializeExceptionChain [0x77DC9D72+99]
+	RtlInitializeExceptionChain [0x77DC9D45+54]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at step_Definitions.Basic.reusable(Basic.java:33)
+	at step_Definitions.Search.user_Navigate_to_URL(Search.java:18)
+	at ?.Given User Navigate to URL(src/test/resources/features/sample.feature:4)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

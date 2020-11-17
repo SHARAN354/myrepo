@@ -135,8 +135,8 @@
 								<value>2</value>
 							</property>
 						</properties>
-						<!-- <suiteXmlFiles> Configuration of xml file that is picked by maven 
-							to run TestNG suite <suiteXmlFile>testng.xml</suiteXmlFile> </suiteXmlFiles> -->
+						 <suiteXmlFiles> Configuration of xml file that is picked by maven 
+							to run TestNG suite <suiteXmlFile>testng.xml</suiteXmlFile> </suiteXmlFiles> 
 					</configuration>
 				</plugin>
 

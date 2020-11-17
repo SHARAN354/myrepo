@@ -52,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Nov 17, 2020 11:11:56 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Nov 17, 2020 04:00:18 PM</span>
 				</a>
 			</li>
 			<li>
@@ -77,8 +77,8 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+											<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -159,10 +159,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>3</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='75%'>3</span> others
 				</div>
 			</div>
 		</div>
@@ -179,72 +179,138 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Search for a Bus</span>
-						<span class='test-time'>Nov 17, 2020 11:11:57 AM</span>
+						<span class='test-time'>Nov 17, 2020 04:00:18 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='fail'>
-	<span class='duration right label'>0h 2m 41s+129ms</span>
+	<span class='duration right label'>0h 0m 15s+48ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify the details of a bus</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node given pass' status='pass'>
+		<li test-id='3' class='node given fail' status='fail'>
 			
 			<b>Given</b>
 			
 			<span class="bdd-step-name">Given User Navigate to URL</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='4' class='node when pass' status='pass'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When User enters source location  and destination location</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='5' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And user enters calender Date</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='6' class='node then fail' status='fail'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then Verify details of the bus</span>
-				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":" //div[@id='search-result']//descendant::div[@id='fwInfoLeftId']/h1"}
+				<div class='pre'><textarea>org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: Unable to receive message from renderer
   (Session info: chrome=86.0.4240.198)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'SHARAN-PC', ip: '192.168.43.27', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\sharan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62407}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 18d1a52e54af7874e8ad71949d3811fd
-*** Element info: {Using=xpath, value= //div[@id='search-result']//descendant::div[@id='fwInfoLeftId']/h1}
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0047C013+3194899]
+	Ordinal0 [0x00366021+2056225]
+	Ordinal0 [0x001FF608+587272]
+	Ordinal0 [0x001F3735+538421]
+	Ordinal0 [0x001F2A6F+535151]
+	Ordinal0 [0x001F2E45+536133]
+	Ordinal0 [0x001F27A5+534437]
+	Ordinal0 [0x001FBBC9+572361]
+	Ordinal0 [0x001F2754+534356]
+	Ordinal0 [0x001F3475+537717]
+	Ordinal0 [0x001F2A6F+535151]
+	Ordinal0 [0x001F2E45+536133]
+	Ordinal0 [0x001F27A5+534437]
+	Ordinal0 [0x001F9EFE+564990]
+	Ordinal0 [0x001F2754+534356]
+	Ordinal0 [0x001F3475+537717]
+	Ordinal0 [0x001F2A6F+535151]
+	Ordinal0 [0x001F2E45+536133]
+	Ordinal0 [0x001F27A5+534437]
+	Ordinal0 [0x001F8186+557446]
+	Ordinal0 [0x001F2754+534356]
+	Ordinal0 [0x001F3475+537717]
+	Ordinal0 [0x001F2A6F+535151]
+	Ordinal0 [0x001F2E45+536133]
+	Ordinal0 [0x001F27A5+534437]
+	Ordinal0 [0x001F74A7+554151]
+	Ordinal0 [0x001F2754+534356]
+	Ordinal0 [0x001F3475+537717]
+	Ordinal0 [0x001F2A6F+535151]
+	Ordinal0 [0x001F2E45+536133]
+	Ordinal0 [0x001F27A5+534437]
+	Ordinal0 [0x001EF06C+520300]
+	Ordinal0 [0x001F2754+534356]
+	Ordinal0 [0x001F25BF+533951]
+	Ordinal0 [0x001F23D3+533459]
+	Ordinal0 [0x00200620+591392]
+	Ordinal0 [0x001A2A0C+207372]
+	Ordinal0 [0x001A1D0D+204045]
+	Ordinal0 [0x0019FC1B+195611]
+	Ordinal0 [0x00183B7F+80767]
+	Ordinal0 [0x00184B4E+84814]
+	Ordinal0 [0x00184AD9+84697]
+	Ordinal0 [0x0037CE64+2149988]
+	GetHandleVerifier [0x005EBE95+1400773]
+	GetHandleVerifier [0x005EBB61+1399953]
+	GetHandleVerifier [0x005F31FA+1430314]
+	GetHandleVerifier [0x005EC69F+1402831]
+	Ordinal0 [0x00373D61+2112865]
+	Ordinal0 [0x0037E5CB+2155979]
+	Ordinal0 [0x0037E6F5+2156277]
+	Ordinal0 [0x0038F26E+2224750]
+	BaseThreadInitThunk [0x75F13677+18]
+	RtlInitializeExceptionChain [0x77DC9D72+99]
+	RtlInitializeExceptionChain [0x77DC9D45+54]
+
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at step_Definitions.Search.verify_details_of_the_bus(Search.java:113)
-	at ?.Then Verify details of the bus(src/test/resources/features/sample.feature:7)
-</pre></div>
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at step_Definitions.Basic.reusable(Basic.java:33)
+	at step_Definitions.Search.user_Navigate_to_URL(Search.java:18)
+	at ?.Given User Navigate to URL(src/test/resources/features/sample.feature:4)
+</textarea></div>
+			
+		</li>
+		<li test-id='4' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User enters source location  and destination location</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='5' class='node and skip' status='skip'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And user enters calender Date</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='6' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Verify details of the bus</span>
+				<div class='pre'>skipped</div>
 			
 		</li>
 	</ul>
@@ -304,7 +370,7 @@ Session ID: 18d1a52e54af7874e8ad71949d3811fd
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+                                <span class='exception-name'>org.openqa.selenium.SessionNotCreatedException</span>
                                 <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
@@ -319,34 +385,100 @@ Session ID: 18d1a52e54af7874e8ad71949d3811fd
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Nov 17, 2020 11:12:37 AM</td>
-                                                        <td class='linked' test-id='6'>Search for a Bus.Verify the details of a bus.Then Verify details of the bus</td>
-                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":" //div[@id='search-result']//descendant::div[@id='fwInfoLeftId']/h1"}
+                                                        <td>Nov 17, 2020 04:00:18 PM</td>
+                                                        <td class='linked' test-id='3'>Search for a Bus.Verify the details of a bus.Given User Navigate to URL</td>
+                                                        <td><pre><textarea>org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: Unable to receive message from renderer
   (Session info: chrome=86.0.4240.198)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'SHARAN-PC', ip: '192.168.43.27', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\sharan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62407}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 18d1a52e54af7874e8ad71949d3811fd
-*** Element info: {Using=xpath, value= //div[@id='search-result']//descendant::div[@id='fwInfoLeftId']/h1}
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0047C013+3194899]
+	Ordinal0 [0x00366021+2056225]
+	Ordinal0 [0x001FF608+587272]
+	Ordinal0 [0x001F3735+538421]
+	Ordinal0 [0x001F2A6F+535151]
+	Ordinal0 [0x001F2E45+536133]
+	Ordinal0 [0x001F27A5+534437]
+	Ordinal0 [0x001FBBC9+572361]
+	Ordinal0 [0x001F2754+534356]
+	Ordinal0 [0x001F3475+537717]
+	Ordinal0 [0x001F2A6F+535151]
+	Ordinal0 [0x001F2E45+536133]
+	Ordinal0 [0x001F27A5+534437]
+	Ordinal0 [0x001F9EFE+564990]
+	Ordinal0 [0x001F2754+534356]
+	Ordinal0 [0x001F3475+537717]
+	Ordinal0 [0x001F2A6F+535151]
+	Ordinal0 [0x001F2E45+536133]
+	Ordinal0 [0x001F27A5+534437]
+	Ordinal0 [0x001F8186+557446]
+	Ordinal0 [0x001F2754+534356]
+	Ordinal0 [0x001F3475+537717]
+	Ordinal0 [0x001F2A6F+535151]
+	Ordinal0 [0x001F2E45+536133]
+	Ordinal0 [0x001F27A5+534437]
+	Ordinal0 [0x001F74A7+554151]
+	Ordinal0 [0x001F2754+534356]
+	Ordinal0 [0x001F3475+537717]
+	Ordinal0 [0x001F2A6F+535151]
+	Ordinal0 [0x001F2E45+536133]
+	Ordinal0 [0x001F27A5+534437]
+	Ordinal0 [0x001EF06C+520300]
+	Ordinal0 [0x001F2754+534356]
+	Ordinal0 [0x001F25BF+533951]
+	Ordinal0 [0x001F23D3+533459]
+	Ordinal0 [0x00200620+591392]
+	Ordinal0 [0x001A2A0C+207372]
+	Ordinal0 [0x001A1D0D+204045]
+	Ordinal0 [0x0019FC1B+195611]
+	Ordinal0 [0x00183B7F+80767]
+	Ordinal0 [0x00184B4E+84814]
+	Ordinal0 [0x00184AD9+84697]
+	Ordinal0 [0x0037CE64+2149988]
+	GetHandleVerifier [0x005EBE95+1400773]
+	GetHandleVerifier [0x005EBB61+1399953]
+	GetHandleVerifier [0x005F31FA+1430314]
+	GetHandleVerifier [0x005EC69F+1402831]
+	Ordinal0 [0x00373D61+2112865]
+	Ordinal0 [0x0037E5CB+2155979]
+	Ordinal0 [0x0037E6F5+2156277]
+	Ordinal0 [0x0038F26E+2224750]
+	BaseThreadInitThunk [0x75F13677+18]
+	RtlInitializeExceptionChain [0x77DC9D72+99]
+	RtlInitializeExceptionChain [0x77DC9D45+54]
+
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at step_Definitions.Search.verify_details_of_the_bus(Search.java:113)
-	at ?.Then Verify details of the bus(src/test/resources/features/sample.feature:7)
-</pre></pre></td>
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at step_Definitions.Basic.reusable(Basic.java:33)
+	at step_Definitions.Search.user_Navigate_to_URL(Search.java:18)
+	at ?.Given User Navigate to URL(src/test/resources/features/sample.feature:4)
+</textarea></pre></td>
                                                     </tr>
                                         </tbody>
                                     </table>
@@ -390,19 +522,19 @@ Session ID: 18d1a52e54af7874e8ad71949d3811fd
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 17, 2020 11:11:56 AM</div>
+					<div class='panel-lead'>Nov 17, 2020 04:00:18 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 17, 2020 11:14:39 AM</div>
+			 		<div class='panel-lead'>Nov 17, 2020 04:00:33 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>162,888ms</div>
+					<div class='panel-lead'>15,324ms</div>
 				</div>
 			</div>
 		</div>
@@ -432,14 +564,14 @@ Session ID: 18d1a52e54af7874e8ad71949d3811fd
 				infoChild: 0,
 				exceptionsChild: 1,
 				
-				passGrandChild: 3,
+				passGrandChild: 0,
 				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 3,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 1,
+				exceptionsGrandChild: 4,
 			};
 		</script>
 		
